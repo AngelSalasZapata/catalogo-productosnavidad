@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de arreglos navideños artesanales.">
+  <title>Catálogo de arreglos navideños</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="encabezado__contenido">
+      <span class="encabezado__detalle" aria-hidden="true">✦</span>
+      <p class="encabezado__etiqueta">Arreglos artesanales</p>
+      <h1>Catálogo de arreglos navideños</h1>
+      <p class="encabezado__texto">
+        Detalles creados para llenar de calidez y encanto cada rincón de tu hogar.
+      </p>
+    </div>
+  </header>
+
+  <main class="catalogo">
+    <section class="catalogo__grid" aria-label="Arreglos navideños disponibles">
+      <article class="producto">
+        <div class="producto__imagen">
+          <button class="producto__boton-imagen" type="button" aria-label="Ampliar imagen del arreglo 1">
+            <img src="imgs/im1.png" alt="Arreglo navideño número uno" loading="lazy">
+            <span class="producto__zoom" aria-hidden="true">⌕</span>
+          </button>
+          <span class="producto__numero">01</span>
+        </div>
+        <div class="producto__contenido">
+          <h2>Arreglo con flores rojas y blancas</h2>
+          <p>S/.75,00</p>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="producto__imagen">
+          <button class="producto__boton-imagen" type="button" aria-label="Ampliar imagen del arreglo 2">
+            <img src="imgs/im2.png" alt="Arreglo navideño número dos" loading="lazy">
+            <span class="producto__zoom" aria-hidden="true">⌕</span>
+          </button>
+          <span class="producto__numero">02</span>
+        </div>
+        <div class="producto__contenido">
+          <h2>Arreglo con flor rosa y reno blanco con bola de vidrio</h2>
+          <p>S/.75,00</p>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="producto__imagen">
+          <button class="producto__boton-imagen" type="button" aria-label="Ampliar imagen del arreglo 3">
+            <img src="imgs/im3.png" alt="Arreglo navideño número tres" loading="lazy">
+            <span class="producto__zoom" aria-hidden="true">⌕</span>
+          </button>
+          <span class="producto__numero">03</span>
+        </div>
+        <div class="producto__contenido">
+          <h2>Arreglo con flor rosa y reno dorado de porcelana</h2>
+          <p>S/.70,00</p>
+        </div>
+      </article>
+
+      <article class="producto">
+        <div class="producto__imagen">
+          <button class="producto__boton-imagen" type="button" aria-label="Ampliar imagen del arreglo 4">
+            <img src="imgs/im4.png" alt="Arreglo navideño número cuatro" loading="lazy">
+            <span class="producto__zoom" aria-hidden="true">⌕</span>
+          </button>
+          <span class="producto__numero">04</span>
+        </div>
+        <div class="producto__contenido">
+          <h2>Arreglo con flor rosa y reno dorado de porcelana</h2>
+          <p>S/.70,00</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <dialog class="visor" aria-label="Vista ampliada de la imagen">
+    <button class="visor__cerrar" type="button" aria-label="Cerrar imagen ampliada">×</button>
+    <div class="visor__contenedor">
+      <img class="visor__imagen" src="" alt="">
+    </div>
+    <p class="visor__ayuda">Toca la imagen para acercar o alejar</p>
+  </dialog>
+
+  <footer>
+    <p>Hecho con cariño para celebrar la Navidad</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
